@@ -31,4 +31,5 @@
   transition-timing-function: linear, linear, ease;
   transition-duration: .2s, .2s, .35s;
   transition-property: top, bottom, width;
+  overflow: hidden;
 }
