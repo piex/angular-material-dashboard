@@ -1,8 +1,9 @@
+@import"./custom.component";
 @include mat-core();
-$indigo-pink-primary: mat-palette($mat-indigo);
-$indigo-pink-accent: mat-palette($mat-pink, A200, A100, A400);
-$indigo-pink-theme: mat-light-theme($indigo-pink-primary, $indigo-pink-accent);
-@include angular-material-theme($indigo-pink-theme);
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
 .indigo-pink {
-  @include angular-material-theme($indigo-pink-theme);
+  @include angular-material-theme($theme);
+  @include custom-component-theme($theme);
 }

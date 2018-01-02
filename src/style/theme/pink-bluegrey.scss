@@ -1,7 +1,9 @@
+@import"./custom.component";
 @include mat-core();
-$pink-bluegrey-primary: mat-palette($mat-pink);
-$pink-bluegrey-accent: mat-palette($mat-blue-grey, A200, A100, A400);
-$pink-bluegrey-theme: mat-dark-theme($pink-bluegrey-primary, $pink-bluegrey-accent);
+$primary: mat-palette($mat-pink);
+$accent: mat-palette($mat-blue-grey, A200, A100, A400);
+$theme: mat-dark-theme($primary, $accent);
 .pink-bluegrey {
-  @include angular-material-theme($pink-bluegrey-theme);
+  @include angular-material-theme($theme);
+  @include custom-component-theme($theme);
 }

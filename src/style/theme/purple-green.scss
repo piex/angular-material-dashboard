@@ -1,7 +1,9 @@
+@import"./custom.component";
 @include mat-core();
-$purple-green-primary: mat-palette($mat-purple);
-$purple-green-accent: mat-palette($mat-green, A200, A100, A400);
-$purple-green-theme: mat-dark-theme($purple-green-primary, $purple-green-accent);
+$primary: mat-palette($mat-purple);
+$accent: mat-palette($mat-green, A200, A100, A400);
+$theme: mat-dark-theme($primary, $accent);
 .purple-green {
-  @include angular-material-theme($purple-green-theme);
+  @include angular-material-theme($theme);
+  @include custom-component-theme($theme);
 }
