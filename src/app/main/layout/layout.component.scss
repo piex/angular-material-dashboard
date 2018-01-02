@@ -24,12 +24,12 @@
 .main-pannel {
   position: relative;
   float: right;
+  overflow-x: hidden;
+  overflow-y: auto;
   width: calc(100vw - 260px);
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   transition: all .33s cubic-bezier(.685, .0473, .346, 1);
   transition-timing-function: linear, linear, ease;
   transition-duration: .2s, .2s, .35s;
   transition-property: top, bottom, width;
-  overflow: hidden;
 }

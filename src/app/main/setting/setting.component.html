@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-icon (click)="showSetting()"> settings </mat-icon>
+  <ul class="dropdown" [ngClass]="{'show-dropdown':isShow}">
+    <li>
+      <div class="theme">
+        <div class="title"> THEME </div>
+        <div class="content">
+          <button mat-mini-fab *ngFor="let theme of themes" [style.background]="theme.color" (click)="changeTheme(theme)">
+            <mat-icon *ngIf="currentTheme.className === theme.className">favorite</mat-icon>
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
