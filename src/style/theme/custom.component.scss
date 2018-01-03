@@ -4,13 +4,21 @@
   $warn: map-get($theme, warn);
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
+  $is-dark-theme: map-get($theme, is-dark);
+  background: mat-color($background, background);
+  color: mat-color($foreground, base);
+  /* 侧边栏主题色 */
   .sidebar {
-    // background: mat-color($background, background);
-    background: mat-color($primary);
+    background: rgba(mat-color($primary), 0.8);
     color: mat-color($primary, default-contrast);
   }
+  /**/
   .navbar {
-    background: mat-color($primary);
+    color: mat-color($foreground, secondary-text);
+  }
+  /* 设置弹窗主题色 */
+  .dropdown {
+    background: mat-color($accent);
     color: mat-color($primary, default-contrast);
   }
 }
