@@ -1,0 +1,141 @@
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+:root body {
+  position: absolute;
+}
+
+* {
+  transition-property: none;
+}
+
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+//chrome自动填充去掉背景色
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: color 999999s ease-out, background-color 999999s ease-out;
+  transition-delay: 999999s;
+}
+
+// 滚动条整体部分
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+// 滚动条两端的按钮
+::-webkit-scrollbar-button {
+  /* 2 */
+}
+
+// 外层轨道
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+// 内层轨道
+// 滚动条
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #888;
+}
+
+// 边角
+// 右下角拖动块

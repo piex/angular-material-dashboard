@@ -11,6 +11,14 @@
   .sidebar {
     background: rgba(mat-color($primary), 0.8);
     color: mat-color($primary, default-contrast);
+    a {
+      color: mat-color($primary, default-contrast);
+    }
+    .routes {
+      li.active {
+        background-color: mat-color($accent);
+      }
+    }
   }
   /**/
   .navbar {
@@ -20,5 +28,10 @@
   .dropdown {
     background: mat-color($accent);
     color: mat-color($primary, default-contrast);
+    &::before {
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid mat-color($accent);
+      border-left: 10px solid transparent;
+    }
   }
 }
